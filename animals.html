@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลสัตว์ - สวนสัตว์สุดมหัศจรรย์</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #264653, #2a9d8f);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Main Content */
+        main .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .animal-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .animal-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #2a9d8f;
+        }
+
+        .animal-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #2a9d8f;
+        }
+
+        .animal-card p {
+            font-size: 1rem;
+            padding: 0 15px;
+            color: #555;
+        }
+
+        .animal-card a {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #264653;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ข้อมูลสัตว์ในสวนสัตว์</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">สินค้า</a></li>
+                    <li><a href="animals.html">ข้อมูลสัตว์</a></li>
+                    <li><a href="activities.html">กิจกรรม</a></li>
+                    <li><a href="comop1.html">แผนที่สวนสัตว์</a></li>
+                    <li><a href="profile.html">ประวัติผู้พัฒนา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Animal Cards -->
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/สิงโต">
+                    <img src="10.jpg" alt="สิงโต">
+                </a>
+                <h3>สิงโต</h3>
+                <p>ราชาแห่งสัตว์ป่า สิงโตเป็นสัตว์ที่แข็งแรงและมีพละกำลังมาก</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/ช้าง">
+                    <img src="11.jpg" alt="ช้าง">
+                </a>
+                <h3>ช้าง</h3>
+                <p>ช้างเป็นสัตว์เลี้ยงลูกด้วยนมขนาดใหญ่ที่สุดในโลก และเป็นสัตว์ที่ฉลาด</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/ยีราฟ">
+                    <img src="12.jpg" alt="ยีราฟ">
+                </a>
+                <h3>ยีราฟ</h3>
+                <p>ยีราฟเป็นสัตว์ที่สูงที่สุดในโลก ด้วยคอยาวและขาที่ยาวพิเศษ</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/เสือ">
+                    <img src="5.jpg" alt="เสือ">
+                </a>
+                <h3>เสือ</h3>
+                <p>เสือเป็นนักล่าที่รวดเร็วและทรงพลัง มักพบในป่าทั่วโลก</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/ม้าลาย">
+                    <img src="13.jpg" alt="ม้าลาย">
+                </a>
+                <h3>ม้าลาย</h3>
+                <p>ม้าลายมีลายทางขาวดำที่เป็นเอกลักษณ์ และสามารถวิ่งได้เร็ว</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/เพนกวิน">
+                    <img src="14.jpg" alt="เพนกวิน">
+                </a>
+                <h3>เพนกวิน</h3>
+                <p>เพนกวินเป็นนกที่บินไม่ได้ แต่สามารถว่ายน้ำได้อย่างคล่องแคล่ว</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/แพนด้า">
+                    <img src="15.jpg" alt="แพนด้า">
+                </a>
+                <h3>แพนด้า</h3>
+                <p>แพนด้าเป็นสัตว์กินพืชที่น่ารัก มักพบในป่าของจีน</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/จิงโจ้">
+                    <img src="16.jpg" alt="จิงโจ้">
+                </a>
+                <h3>จิงโจ้</h3>
+                <p>จิงโจ้เป็นสัตว์เลี้ยงลูกด้วยนมที่มีถุงหน้าท้อง และกระโดดได้ไกล</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/โคอาลา">
+                    <img src="17.jpg" alt="โคอาลา">
+                </a>
+                <h3>โคอาลา</h3>
+                <p>โคอาลาเป็นสัตว์ที่ชอบกินใบยูคาลิปตัส และใช้เวลาส่วนใหญ่ในการนอน</p>
+            </div>
+            <div class="animal-card">
+                <a href="https://th.wikipedia.org/wiki/นกฟลามิงโก">
+                    <img src="18.jpg" alt="นกฟลามิงโก">
+                </a>
+                <h3>นกฟลามิงโก</h3>
+                <p>นกฟลามิงโกมีขนสีชมพูที่สวยงาม และยืนได้ด้วยขาเดียว</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 สวนสัตว์สุดมหัศจรรย์ - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

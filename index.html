@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้าสวนสัตว์สุดมหัศจรรย์</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffecd1;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 10px 0 15px;
+        }
+
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #444;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #ff8a75;
+            transform: scale(1.05);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- หัวเว็บ -->
+    <header>
+        <h1>🌟 สินค้าสวนสัตว์สุดมหัศจรรย์ 🌟</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">สินค้า</a></li>
+                <li><a href="animals.html">ข้อมูลสัตว์</a></li>
+                <li><a href="activities.html">กิจกรรม</a></li>
+                <li><a href="comop1.html">แผนที่สวนสัตว์</a></li>
+                <li><a href="profile.html">ประวัติผู้พัฒนา</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- คอนเทนต์ -->
+    <main class="container">
+        <h2>สินค้าทั้งหมด</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="6.jpg" alt="ตุ๊กตาเสือ">
+                <h3>ตุ๊กตาเสือ</h3>
+                <p>ตุ๊กตาเสือแสนน่ารัก เหมาะสำหรับเด็กและผู้ใหญ่</p>
+                <div class="price">฿299</div>
+                <button onclick="addToCart('ตุ๊กตาเสือ', 299)">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card">
+                <img src="7.jpg" alt="แก้วลายม้าลาย">
+                <h3>แก้วลายม้าลาย</h3>
+                <p>แก้วเซรามิกคุณภาพสูง พร้อมลายม้าลาย</p>
+                <div class="price">฿199</div>
+                <button onclick="addToCart('แก้วลายม้าลาย', 199)">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card">
+                <img src="8.jpg" alt="กระเป๋าช้าง">
+                <h3>กระเป๋าช้าง</h3>
+                <p>กระเป๋าผ้าพิมพ์ลายช้าง น้ำหนักเบาและทนทาน</p>
+                <div class="price">฿350</div>
+                <button onclick="addToCart('กระเป๋าช้าง', 350)">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card">
+                <img src="9.jpg" alt="ตุ๊กตาหมูเด้ง">
+                <h3>ตุ๊กตาหมูเด้ง</h3>
+                <p>กอดนุ่มและน่ารัก</p>
+                <div class="price">฿560</div>
+                <button onclick="addToCart('ตุ๊กตาหมูเด้ง', 560)">เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 สวนสัตว์สุดมหัศจรรย์ - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, price) {
+            alert(`เพิ่ม "${productName}" ในราคา ฿${price} ลงในตะกร้าสำเร็จ!`);
+        }
+    </script>
+</body>
+</html>

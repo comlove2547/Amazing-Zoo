@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิจกรรมในสวนสัตว์ - สวนสัตว์สุดมหัศจรรย์</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px 0;
+        }
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #264653;
+        }
+        main .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .activity-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .activity-card img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .activity-card h3 {
+            margin: 10px 0;
+        }
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #264653;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>กิจกรรมในสวนสัตว์</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">สินค้า</a></li>
+                    <li><a href="animals.html">ข้อมูลสัตว์</a></li>
+                    <li><a href="activities.html">กิจกรรม</a></li>
+                    <li><a href="comop1.html">แผนที่สวนสัตว์</a></li>
+                    <li><a href="profile.html">ประวัติผู้พัฒนา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- กิจกรรม -->
+            <div class="activity-card">
+                <img src="19.jpg" alt="กิจกรรมป้อนอาหารสัตว์">
+                <h3>ป้อนอาหารสัตว์</h3>
+                <p>สัมผัสประสบการณ์ใกล้ชิดกับสัตว์ป่าและป้อนอาหารด้วยตัวเอง</p>
+
+            </div>
+            <div class="activity-card">
+                <img src="20.jpg" alt="กิจกรรมขี่ช้าง">
+                <h3>ขี่ช้าง</h3>
+                <p>สำรวจธรรมชาติไปพร้อมกับช้างสุดน่ารักในสวนสัตว์</p>
+            </div>
+            <div class="activity-card">
+                <img src="21.jpg" alt="กิจกรรมดูโชว์สัตว์">
+                <h3>โชว์สัตว์</h3>
+                <p>ชมการแสดงสุดพิเศษจากสัตว์แสนรู้ เช่น แมวน้ำและโลมา</p>
+            </div>
+            <div class="activity-card">
+                <img src="22.jpg" alt="กิจกรรมเดินชมสวนสัตว์กลางคืน">
+                <h3>เดินชมสวนสัตว์กลางคืน</h3>
+                <p>เปิดประสบการณ์ใหม่กับการชมสัตว์ตอนกลางคืน</p>
+            </div>
+            <div class="activity-card">
+                <img src="23.jpg" alt="กิจกรรมถ่ายรูปกับสัตว์">
+                <h3>ถ่ายรูปกับสัตว์</h3>
+                <p>ถ่ายรูปใกล้ชิดกับสัตว์น่ารักเพื่อเป็นที่ระลึก</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 สวนสัตว์สุดมหัศจรรย์ - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
